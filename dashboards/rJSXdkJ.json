@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": "LsOoO6E",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "nmartorell",
+  "listed": true,
+  "name": "COX\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nmartorell"
+    },
+    "lastModifiedOn": 1651875656634
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nmartorell"
+    },
+    "lastModifiedOn": 1651875656634
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
