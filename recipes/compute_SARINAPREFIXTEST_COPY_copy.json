@@ -24,7 +24,7 @@
           "map": {}
         },
         "sparkConfig": {
-          "inheritConf": "default-SoK-config",
+          "inheritConf": "sample-local-config",
           "conf": []
         },
         "executionEngine": "SPARK_SUBMIT",
@@ -78,11 +78,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "nmartorell"
     },
-    "lastModifiedOn": 1658245303651
+    "lastModifiedOn": 1658245307041
   },
   "creationTag": {
     "versionNumber": 0,
