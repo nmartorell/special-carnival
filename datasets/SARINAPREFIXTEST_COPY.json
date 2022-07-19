@@ -1,0 +1,163 @@
+{
+  "type": "Snowflake",
+  "managed": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nmartorell"
+    },
+    "lastModifiedOn": 1658245260339
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nmartorell"
+    },
+    "lastModifiedOn": 1658245260339
+  },
+  "tags": [],
+  "params": {
+    "connection": "qa-snowflake",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "catalog": "INTEGRATION_TESTS",
+    "table": "SARINAPREFIXTEST_COPY",
+    "schema": "INTEGRATION_TESTS",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {"name":"CUSTOMER_ID","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"ORDER_DATE_YEAR_DISTINCT","type":"bigint","originalType":"NUMBER"},
+      {"name":"ORDER_DATE_MONTH_DISTINCT","type":"bigint","originalType":"NUMBER"},
+      {"name":"ORDER_DAY_OF_WEEK_DISTINCT","type":"bigint","originalType":"NUMBER"},
+      {"name":"PAGES_VISITED_AVG","type":"double","originalType":"DOUBLE"},
+      {"name":"TOTAL_SUM","type":"double","originalType":"DOUBLE"},
+      {"name":"GENDER","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"AGE_FIRST_ORDER","type":"double","originalType":"DOUBLE"},
+      {"name":"USER_AGENT_BRAND","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"USER_AGENT_OS","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"USER_AGENT_OSVERSION","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"USER_AGENT_OSFLAVOR","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IP_ADDRESS_GEOPOINT","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IP_ADDRESS_CITY","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IP_ADDRESS_COUNTRY","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"CAMPAIGN","type":"boolean","originalType":"BOOLEAN"},
+      {"name":"DATASET","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"COUNT","type":"bigint","originalType":"NUMBER"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
