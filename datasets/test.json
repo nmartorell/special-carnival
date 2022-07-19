@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "nmartorell"
     },
-    "lastModifiedOn": 1658245524481
+    "lastModifiedOn": 1658257824435
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,8 +56,27 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"CUSTOMER_ID","type":"string","maxLength":4194304},
+      {"name":"ORDER_DATE_YEAR_DISTINCT","type":"double"},
+      {"name":"ORDER_DATE_MONTH_DISTINCT","type":"double"},
+      {"name":"ORDER_DAY_OF_WEEK_DISTINCT","type":"double"},
+      {"name":"PAGES_VISITED_AVG","type":"double"},
+      {"name":"TOTAL_SUM","type":"double"},
+      {"name":"GENDER","type":"string","maxLength":4194304},
+      {"name":"AGE_FIRST_ORDER","type":"double"},
+      {"name":"USER_AGENT_BRAND","type":"string","maxLength":4194304},
+      {"name":"USER_AGENT_OS","type":"string","maxLength":4194304},
+      {"name":"USER_AGENT_OSVERSION","type":"string","maxLength":4194304},
+      {"name":"USER_AGENT_OSFLAVOR","type":"string","maxLength":4194304},
+      {"name":"IP_ADDRESS_GEOPOINT","type":"string","maxLength":4194304},
+      {"name":"IP_ADDRESS_CITY","type":"string","maxLength":4194304},
+      {"name":"IP_ADDRESS_COUNTRY","type":"string","maxLength":4194304},
+      {"name":"CAMPAIGN","type":"boolean"},
+      {"name":"DATASET","type":"string","maxLength":4194304},
+      {"name":"COUNT","type":"double"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
