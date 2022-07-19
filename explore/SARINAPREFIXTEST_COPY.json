@@ -1,0 +1,89 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "CUSTOMER_ID": 100,
+      "ORDER_DATE_YEAR_DISTINCT": 195,
+      "ORDER_DATE_MONTH_DISTINCT": 203,
+      "ORDER_DAY_OF_WEEK_DISTINCT": 210,
+      "PAGES_VISITED_AVG": 143,
+      "TOTAL_SUM": 100,
+      "GENDER": 100,
+      "AGE_FIRST_ORDER": 128,
+      "USER_AGENT_BRAND": 135,
+      "USER_AGENT_OS": 113,
+      "USER_AGENT_OSVERSION": 165,
+      "USER_AGENT_OSFLAVOR": 158,
+      "IP_ADDRESS_GEOPOINT": 183,
+      "IP_ADDRESS_CITY": 183,
+      "IP_ADDRESS_COUNTRY": 169,
+      "CAMPAIGN": 100,
+      "DATASET": 100,
+      "COUNT": 100
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1658245484804
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
