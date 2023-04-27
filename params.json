@@ -36,7 +36,7 @@
       "exportForeignObjectsReferences": true
     }
   },
-  "owner": "nmartorell",
+  "owner": "admin",
   "permissionsVersion": "V2",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -162,7 +162,6 @@
     "dkuProperties": []
   },
   "name": "COX",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -218,11 +217,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682631237729
+    "lastModifiedOn": 1682631526662
   },
   "creationTag": {
     "versionNumber": 0,
@@ -232,7 +231,9 @@
     "lastModifiedOn": 1651875656627
   },
   "shortDesc": "The project *COX* was created by Ned Martorell on May 06th 2022",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
