@@ -8,6 +8,7 @@
   },
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
+  "hasSetupSection": false,
   "bundleExporterSettings": {
     "exportOptions": {
       "exportUploads": false,
@@ -16,17 +17,23 @@
       "exportSavedModels": false,
       "exportManagedFolders": false,
       "exportModelEvaluationStores": false,
+      "exportProjectResources": true,
+      "exportLabelingTasks": false,
       "exportAllInputDatasets": false,
       "exportAllDatasets": false,
       "exportAllInputManagedFolders": false,
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
+      "exportNotebooksWithOutputs": true,
       "includedDatasetsData": [],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
-      "shareAllInputDatasets": false
+      "includedCodeStudios": [],
+      "includedLabelingTasks": [],
+      "shareAllInputDatasets": false,
+      "exportForeignObjectsReferences": true
     }
   },
   "owner": "nmartorell",
@@ -43,6 +50,7 @@
       "zonesGraphConnectZones": true
     },
     "gitCommitMode": "AUTO",
+    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -53,6 +61,9 @@
       "mergeSqlPipelines": false,
       "pruneBeforeSqlPipelines": true
     },
+    "sharingRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "INHERIT",
+    "accessRequestsEnabled": "INHERIT",
     "limitsSettings": {
       "memSampleBytes": {
         "soft": -1,
@@ -135,6 +146,7 @@
         },
         "scaling": {
           "initialReplicas": 1,
+          "progressDeadlineSeconds": 600,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
           "hpaMetrics": [],
@@ -142,7 +154,9 @@
           "hpaMaxPods": 0,
           "hpaAnnotations": []
         },
-        "deploymentModifier": {}
+        "deploymentModifier": {
+          "config": {}
+        }
       }
     },
     "dkuProperties": []
@@ -204,11 +218,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "nmartorell"
+      "login": "admin"
     },
-    "lastModifiedOn": 1658267171144
+    "lastModifiedOn": 1682631237729
   },
   "creationTag": {
     "versionNumber": 0,
