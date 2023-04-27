@@ -161,7 +161,7 @@
     },
     "dkuProperties": []
   },
-  "name": "COX",
+  "name": "COX (branch2)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -217,11 +217,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682631526662
+    "lastModifiedOn": 1682631529149
   },
   "creationTag": {
     "versionNumber": 0,
@@ -230,7 +230,7 @@
     },
     "lastModifiedOn": 1651875656627
   },
-  "shortDesc": "The project *COX* was created by Ned Martorell on May 06th 2022",
+  "shortDesc": "The project *COX* was created by Ned Martorell on May 06th 2022\nThe project *COX_BRANCH2* was copied from *COX* by Administrator on Apr 27th 2023",
   "tags": [
     "duplicated"
   ],
